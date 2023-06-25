@@ -1,0 +1,35 @@
+{
+    "indexversion": "0.0.1",
+    "index":
+    [
+        {
+            "name": "zos-v0.3.0-offical",
+            "urls": 
+            [
+                {"github": "https://github.com/Zeal8bit/Zeal-8-bit-OS/releases/download/v0.3.0/os_with_romdisk.img"}
+            ],
+            "version": "zos-v0.3.0-offical",
+            "hash": "007ec3306c33b20bf304047ba63edf97ecf21cbfa83bb0313c96d34d363336e2",
+            "upload": 0
+        },
+        {
+            "name":"zos-v0.2.0-offical",
+            "urls": 
+            [
+                {"github": "https://github.com/Zeal8bit/Zeal-8-bit-OS/releases/download/v0.2.0/os_with_romdisk.img"}
+            ],
+            "version":"zos-v0.2.0-offical",
+            "hash": "34486dcf001013efdf4aa7251cc57aede3bf07b37bf79cf9c64cc830cf0789af",
+            "upload": 0
+        },
+        {
+            "name": "zos-v0.2.0-JasonMo1",
+            "urls":
+            [
+                {"github":"https://github.com/JasonMo1/ZealOS-Prebuild/releases/download/23-06-22/owr0.2.0_master.img"}
+            ],
+            "version": "zos-v0.2.0-17-g588f5ca-JasonMo1",
+            "hash": "1229403204cd2c2dd4010b3ba6fb2456a86c353bece87a78ba2bf16afd21184e"
+        }
+    ]
+}
