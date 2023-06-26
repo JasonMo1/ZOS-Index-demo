@@ -1,24 +1,54 @@
 {
-    "indexversion": "0.0.1",
+    "indexversion":"0.1.0",
     "index":
     [
         {
-            "name": "zos-v0.3.0-offical",
-            "urls": "https://github.com/Zeal8bit/Zeal-8-bit-OS/releases/download/v0.3.0/os_with_romdisk.img",
-            "version": "zos-v0.3.0-offical",
-            "hash": "007ec3306c33b20bf304047ba63edf97ecf21cbfa83bb0313c96d34d363336e2"
+            "name":"zos-v0.3.0-offical",
+            "urls":"https://github.com/Zeal8bit/Zeal-8-bit-OS/releases/download/v0.3.0/os_with_romdisk.img",
+            "version":"zos-v0.3.0-main-offical",
+            "hash":"007ec3306c33b20bf304047ba63edf97ecf21cbfa83bb0313c96d34d363336e2"
         },
         {
-            "name": "zos-v0.2.0-offical",
-            "urls": "https://github.com/Zeal8bit/Zeal-8-bit-OS/releases/download/v0.2.0/os_with_romdisk.img",
-            "version":"zos-v0.2.0-offical",
-            "hash": "34486dcf001013efdf4aa7251cc57aede3bf07b37bf79cf9c64cc830cf0789af"
+            "name":"zos-v0.2.0-offical",
+            "urls":"https://github.com/Zeal8bit/Zeal-8-bit-OS/releases/download/v0.2.0/os_with_romdisk.img",
+            "version":"zos-v0.2.0-main-offical",
+            "hash":"34486dcf001013efdf4aa7251cc57aede3bf07b37bf79cf9c64cc830cf0789af"
         },
         {
-            "name": "zos-v0.2.0-offical",
-            "urls": "https://github.com/JasonMo1/ZealOS-Prebuild/releases/download/23-06-22/owr0.2.0_master.img",
-            "version": "zos-v0.2.0-17-g588f5ca-JasonMo1",
-            "hash": "1229403204cd2c2dd4010b3ba6fb2456a86c353bece87a78ba2bf16afd21184e"
+            "name":"zos-v0.2.0-Jasonmo",
+            "urls":"https://github.com/JasonMo1/ZealOS-Prebuild/releases/download/23-06-22/owr0.2.0_master.img",
+            "version":"zos-v0.2.0-17-g588f5ca-main-JasonMo",
+            "hash":"1229403204cd2c2dd4010b3ba6fb2456a86c353bece87a78ba2bf16afd21184e"
+        },
+        {
+            "name":"zos-v0.2.0-星夜之幻+cft",
+            "urls":"https://github.com/JasonMo1/ZealOS-Prebuild/releases/download/23-06-22/owr0.2.0_cft.img",
+            "version":"zos-v0.2.0-19-g2eeeed1-main-星夜之幻",
+            "hash":"d39d52e0cd2f6e941cfca83cf0cf78e61ef3aa6eee17af80310e2a204fc4aac0"
+        },
+        {
+            "name":"zos-v0.2.0-Jasonmo+fetch6",
+            "urls":"https://github.com/JasonMo1/ZealOS-Prebuild/releases/download/23-06-22/owr0.2.0_fetch6.img",
+            "version":"zos-v0.2.0-17-g588f5ca-main-JasonMo",
+            "hash":"a5c004758801284befdbff5b772e9e24961a2acde058fd10518169d9b7fbfad1"
+        },
+        {
+            "name":"zos-v0.2.0-Jasonmo+hello",
+            "urls":"https://github.com/JasonMo1/ZealOS-Prebuild/releases/download/23-06-22/owr0.2.0_hello.img",
+            "version":"zos-v0.2.0-17-g588f5ca-main-JasonMo",
+            "hash":"28438b8820189e74d815620391a4af4815e7c344a47018811a133015f49d64d0"
+        },
+        {
+            "name":"zos-v0.2.0-Jasonmo+rdfile",
+            "urls":"https://github.com/JasonMo1/ZealOS-Prebuild/releases/download/23-06-22/owr0.2.0_rdfile.img",
+            "version":"zos-v0.2.0-17-g588f5ca-main-JasonMo",
+            "hash":"efc862ae2518d041bb3b9ba5a9bc280a4b1a82e1b9aca0f809ddf71394c60100"
+        },
+        {
+            "name":"cpm-v2.2-Jasonmo",
+            "urls":"https://github.com/JasonMo1/ZealOS-Prebuild/releases/download/23-06-26/cpm-zealcom.img",
+            "version":"cpm-v2.2-JasonMo",
+            "hash":"3210481ff550a54637a4fa3c5018f124a42acf974d3c14c73b25046c3e5fba8c"
         }
     ]
 }
