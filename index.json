@@ -1,12 +1,12 @@
 {
-    "indexversion":"0.1.3",
+    "indexversion":"0.1.4",
     "index":
     [
         {
             "name":"zos-v0.3.0-offical",
             "urls":
             [
-                "https://github.com/Zeal8bit/Zeal-8-bit-OS/releases/download/v0.3.0/os_with_romdisk.img"
+                "https://github.com/JasonMo1/ZealOS-Prebuild/releases/download/23-07-05/owr0.3.0_master.img"
             ],
             "version":"zos-v0.3.0-main-offical",
             "hash":"007ec3306c33b20bf304047ba63edf97ecf21cbfa83bb0313c96d34d363336e2"
@@ -35,7 +35,7 @@
             [
                 "https://github.com/JasonMo1/ZealOS-Prebuild/releases/download/23-06-22/owr0.2.0_cft.img"
             ],
-            "version":"zos-v0.2.0-19-g2eeeed1-main-星夜之幻",
+            "version":"zos-v0.2.0-19-g2eeeed1-main-星夜之幻+cft",
             "hash":"d39d52e0cd2f6e941cfca83cf0cf78e61ef3aa6eee17af80310e2a204fc4aac0"
         },
         {
@@ -44,7 +44,7 @@
             [
                 "https://github.com/JasonMo1/ZealOS-Prebuild/releases/download/23-06-22/owr0.2.0_fetch6.img"
             ],
-            "version":"zos-v0.2.0-17-g588f5ca-main-JasonMo",
+            "version":"zos-v0.2.0-17-g588f5ca-main-JasonMo+fetch6",
             "hash":"a5c004758801284befdbff5b772e9e24961a2acde058fd10518169d9b7fbfad1"
         },
         {
@@ -53,7 +53,7 @@
             [
                 "https://github.com/JasonMo1/ZealOS-Prebuild/releases/download/23-06-22/owr0.2.0_hello.img"
             ],
-            "version":"zos-v0.2.0-17-g588f5ca-main-JasonMo",
+            "version":"zos-v0.2.0-17-g588f5ca-main-JasonMo+hello",
             "hash":"28438b8820189e74d815620391a4af4815e7c344a47018811a133015f49d64d0"
         },
         {
@@ -62,7 +62,7 @@
             [
                 "https://github.com/JasonMo1/ZealOS-Prebuild/releases/download/23-06-22/owr0.2.0_rdfile.img"
             ],
-            "version":"zos-v0.2.0-17-g588f5ca-main-JasonMo",
+            "version":"zos-v0.2.0-17-g588f5ca-main-JasonMo+rdfile",
             "hash":"efc862ae2518d041bb3b9ba5a9bc280a4b1a82e1b9aca0f809ddf71394c60100"
         },
         {
