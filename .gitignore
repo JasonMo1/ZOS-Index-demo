@@ -1,2 +1,3 @@
 zos-index-generator/target
+zos-index-generator/cache
 *.lock

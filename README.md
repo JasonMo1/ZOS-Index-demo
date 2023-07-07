@@ -10,7 +10,7 @@ Add "authors"
 
 Add usement to "version"
 
-# Write
+## Write
 
 name: The name will show in the combobox of the emulator.
 
@@ -23,3 +23,24 @@ hash: The hash value of your image. Only support SHA256 now. You can run followi
 ```
 certutil -hashfile /path/to/your/image SHA256
 ```
+
+## Generate
+
+If you don't want to write your index by yourself, you can try zos-index-generator. It is a program which aims to generate index.json easier. You can get its binary in our release page or use following commands if you have installed rust:
+
+```
+cd /path/to/zos-index-generator
+cargo run <zos-index-generator commands>
+```
+
+For example, if you want to add your index to index.json, run:
+
+```
+cargo run new
+```
+
+And follow the steps, zos-index-generator will push it to the branch "temp", I wll merge it when I got some times.
+
+## TODO
+
+There are some bugs in auto push now, I have to fix it.

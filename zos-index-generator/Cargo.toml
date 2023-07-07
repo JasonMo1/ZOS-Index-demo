@@ -7,3 +7,28 @@ edition = "2021"
 
 [dependencies]
 sha256 = "1.1.4"
+http-downloader = { version = "0.3.2", features = ["all-extensions"] }
+url = { version = "2" }
+tokio = { version = "1.17.0", features = ["full"] }
+hyper = { version = "0.14.18", features = ["full"] }
+hyper-tls = "0.5.0"
+anyhow = "1.0.56"
+lazy_static = "1.4.0"
+indicatif = "0.17.0-rc.10"
+tracing-subscriber = { version = "0.3" }
+bson = { version = "2.3.0" }
+serde = { version = "1.0" }
+tracing = { version = "0.1" }
+tokio-util = { version = "0.7", features = [] }
+futures-util = { version = "0.3" }
+async-stream = { version = "0.3" }
+git2 = "0.17.2"
+
+[dependencies.clap]
+version = "4.3.10"
+default-features = false
+features = ["std", "cargo", "derive"]
+
+[dependencies.uuid]
+version = "1.4.0"
+features = ["v4"]
