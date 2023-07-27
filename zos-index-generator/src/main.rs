@@ -4,7 +4,6 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-// Standard
 use std::io;
 use std::fs;
 use std::mem;
@@ -17,15 +16,13 @@ use std::path::PathBuf;
 use sha256::try_digest;
 use std::time::Duration;
 use std::fs::{OpenOptions};
-use git2::{Repository, Signature, Direction, PushOptions, RemoteCallbacks, Cred};
 use std::num::{NonZeroU8, NonZeroUsize};
-use http_downloader::{ // I need to make it\
-    HttpDownloaderBuilder,//a beautiful import\
+use http_downloader::{HttpDownloaderBuilder,
     speed_tracker::DownloadSpeedTrackerExtension,
     status_tracker::DownloadStatusTrackerExtension,
     breakpoint_resume::DownloadBreakpointResumeExtension,
-    bson_file_archiver::{ArchiveFilePath, BsonFileArchiverBuilder}
-};
+    bson_file_archiver::{ArchiveFilePath, BsonFileArchiverBuilder}};
+use git2::{Repository, Signature, Direction, PushOptions, RemoteCallbacks, Cred};
 
 fn main() {
     let helpmsg = "usage: zos-index-generator [new][help]";
@@ -76,7 +73,6 @@ fn main() {
                 },
                 Err(e) => {
                     println!("\nPush error: {}\nPlease remove \"cache\" directory by yourself", e);
-                    
                 },
             }
         }
@@ -218,8 +214,13 @@ fn write_index(index: &String) -> std::io::Result<()> {
 
 fn clone_repo() -> Result<git2::Repository, git2::Error> {
     println!("Cloning git repo...");
-    let url = "https://github.com/JasonMo1/ZOS-Index-demo.git";
-    let clone = Repository::clone_recurse(url, "cache/repo")?; // 使用 clone_recurse 函数来克隆远程仓库并更新子模块
+    let url = "git@github.com:JasonMo1/ZOS-Index-demo.git";
+    let callbacks = create_callbacks();
+    let mut fetch_options = git2::FetchOptions::new();
+    fetch_options.remote_callbacks(callbacks);
+    let mut builder = git2::build::RepoBuilder::new();
+    builder.fetch_options(fetch_options);
+    let clone = builder.clone(url, std::path::Path::new("cache/repo"))?; // 使用 clone 函数来克隆远程仓库
     Ok(clone) // 返回成功结果
 }
 
@@ -235,7 +236,7 @@ fn commit_repo() -> Result<(), git2::Error> {
     repo.set_head_detached(commit_id)
 }
 
-fn push_repo() -> Result<(), git2::Error> {
+fn push_repo_() -> Result<(), git2::Error> {
     let repo = Repository::open("cache/repo")?; // 打开一个仓库
 
     let mut remote = repo.find_remote("origin")?;
@@ -253,6 +254,19 @@ fn push_repo() -> Result<(), git2::Error> {
     Ok(())
 }
 
+fn push_repo() -> Result<(), git2::Error> {
+    let repo = Repository::open("cache/repo")?;
+    let url = "git@github.com:JasonMo1/ZOS-Index-demo.git";
+
+    let mut remote = match repo.find_remote("origin") {
+        Ok(r) => r,
+        Err(_) => repo.remote("origin", url)?,
+    };
+    // remote.connect(Direction::Push)?;
+    remote.connect_auth(Direction::Push, Some(create_callbacks()), None)?;
+    remote.push(&["refs/heads/temp:refs/heads/temp"], None)
+}
+
 ///////////
 // Utils //
 ///////////
@@ -268,15 +282,25 @@ fn create_callbacks<'a>() -> RemoteCallbacks<'a>{
     //     )
     // });
     callbacks.credentials(|_url, username_from_url, _allowed_types| {
-        tracing::info!("Allowed types: {:?}", _allowed_types);
-
+        // Use the username from the url or a default one
+        let username = username_from_url.unwrap_or("git");
         Cred::ssh_key(
-            username_from_url.unwrap(),
-            None,
+            username,
+            Some(&std::path::Path::new("C:/Users/AdminJason/Desktop/ZOW/Zeal-8-bit/ZOS-Index-demo/zos-index-generator/src/ssh_key/pushzig_rsa.pub")),
             std::path::Path::new("ssh_key/pushzig_rsa"),
             None,
         )
     });
+    // callbacks.credentials(|_url, username_from_url, _allowed_types| {
+    //     tracing::info!("Allowed types: {:?}", _allowed_types);
+
+    //     Cred::ssh_key(
+    //         username_from_url.unwrap(),
+    //         None,
+    //         std::path::Path::new("ssh_key/pushzig_rsa"),
+    //         None,
+    //     )
+    // });
     callbacks
 }
 
