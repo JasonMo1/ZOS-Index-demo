@@ -3,6 +3,12 @@
     "index":
     [
         {
+            "name": "zos-v0.3.0-Zeal8bit+zealasm+zepto+wozmon",
+            "urls": "https://cdn.discordapp.com/attachments/1028694059461644429/1145983934677667930/g39f718_zealasm_zepto_wozmon.img",
+            "version": "zos-v0.3.0-21-g3f7188-unknown-Zeal8bit+zealasm+zepto+wozmon",
+            "hash": "7182afd16eae9e93a59602b8b0de228aaa635dc58df078eac4c03fe3b7fb749f"
+        },
+        {
             "name": "zos-v0.3.0-offical",
             "urls": "https://github.com/JasonMo1/ZealOS-Prebuild/releases/download/23-07-05/owr0.3.0_master.img",
             "version": "zos-v0.3.0-main-offical",

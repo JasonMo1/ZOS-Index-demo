@@ -43,7 +43,7 @@
 
 <p>Here is the index of the prebuild mirrors list of Zeal-8-bit-Computer.</p>
 
-<h3 id="feature">Feature</h3>
+<h2 id="feature">Feature</h2>
 
 <p>Add support for more urls and check for the speed</p>
 
@@ -63,21 +63,6 @@
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>certutil -hashfile /path/to/your/image SHA256
 </code></pre></div></div>
-
-<h2 id="generate">Generate</h2>
-
-<p>If you don’t want to write your index by yourself, you can try zos-index-generator. It is a program which aims to generate index.json easier. You can get its binary in our release page or use following commands if you have installed rust:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /path/to/zos-index-generator
-cargo run &lt;zos-index-generator commands&gt;
-</code></pre></div></div>
-
-<p>For example, if you want to add your index to index.json, run:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cargo run new
-</code></pre></div></div>
-
-<p>And follow the steps, zos-index-generator will push it to the branch “temp”, I wll merge it when I got some times.</p>
 
 <h2 id="todo">TODO</h2>
 
