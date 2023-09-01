@@ -1,16 +1,10 @@
 # ZOS-Index-demo
 
+[![Logo](./assets/img/logo1_small.png "Logo")](file:///C:/Users/AdminJason/Desktop/ZOW/Zeal-8-bit/ZOS-Index-demo/assets/img/logo1.png)
+
 Here is the index of the prebuild mirrors list of Zeal-8-bit-Computer.
 
-## Feature
-
-Add support for more urls and check for the speed
-
-Add "authors"
-
-Add usement to "version"
-
-## Write
+## Write an index by yourself
 
 name: The name will show in the combobox of the emulator.
 
@@ -26,4 +20,4 @@ certutil -hashfile /path/to/your/image SHA256
 
 ## TODO
 
-There are some bugs in auto push now, I have to fix it.
+Add CORS test script
