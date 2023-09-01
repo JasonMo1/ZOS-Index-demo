@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ZOS-Index-demo | Here is the index of the prebuild mirrors list</title>
+    <title>ZOS-Index-demo | Here is the index of the prebuild images</title>
     <meta name="generator" content="Jekyll v3.9.3" />
     <meta property="og:title" content="ZOS-Index-demo" />
     <meta property="og:locale" content="en_US" />
-    <meta name="description" content="Here is the index of the prebuild mirrors list" />
-    <meta property="og:description" content="Here is the index of the prebuild mirrors list" />
+    <meta name="description" content="Here is the index of the prebuild images" />
+    <meta property="og:description" content="Here is the index of the prebuild images" />
     <link rel="canonical" href="https://jasonmo1.github.io/ZOS-Index-demo/" />
     <meta property="og:url" content="https://jasonmo1.github.io/ZOS-Index-demo/" />
     <meta property="og:site_name" content="ZOS-Index-demo" />
@@ -26,13 +26,40 @@
     <script src="assets/js/libs/marked.min.js"></script>
     <script src="assets/js/libs/anchor.min.js"></script>
     <script src="assets/js/readme.js"></script>
+    <script src="assets/js/indexes.js"></script>
 
     <div id="content" class="container-lg px-3 my-5 markdown-body">
+    </div>
+    <div class="container-lg px-3 my-5 markdown-body">
+      <h2>Index Viewer</h2>
+
+      <h3>Offical Index</h3>
+      <button onclick="download_index('offical');">Download this index</button>
+      <div class="language-plaintext highlighter-rouge">
+        <div class="highlight">
+          <pre class="highlight">
+            <code id="zos-index-offical"></code>
+          </pre>
+        </div>
+      </div>
+
+      <h3>Our Index</h3>
+      <button onclick="download_index('demo');">Download this index</button>
+      <div class="language-plaintext highlighter-rouge">
+        <div class="highlight">
+          <pre class="highlight">
+            <code id="zos-index-demo"></code>
+          </pre>
+        </div>
+      </div>
+
     </div>
     <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
       This site is open source  <a href="https://github.com/JasonMo1/ZOS-Index-demo/edit/main/README.md">Improve this page</a>.
     </div>
 
     <script src="assets/js/init.js"></script>
+
+    <a id="fordown"></a>
   </body>
 </html>
