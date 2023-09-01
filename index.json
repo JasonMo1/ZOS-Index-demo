@@ -21,13 +21,13 @@
             "hash": "d66ed806ce9509f3d3be6b429e4c6a863f4c5d4ccbcd94acddfdaa87d1c0be54"
         },
         {
-            "name": "zos-v0.3.0-21-g3f7188\n+zealasm+zepto+wozmon",
+            "name": "zos-v0.3.0-21-g3f7188+zealasm+zepto+wozmon",
             "urls": "https://cdn.discordapp.com/attachments/1028694059461644429/1145983934677667930/g39f718_zealasm_zepto_wozmon.img",
             "version": "zos-v0.3.0-21-g3f7188",
             "hash": "7182afd16eae9e93a59602b8b0de228aaa635dc58df078eac4c03fe3b7fb749f"
         },
         {
-            "name": "zos-v0.2.0-19-g2eeeed1\n+cft",
+            "name": "zos-v0.2.0-19-g2eeeed1+cft",
             "urls": "https://github.com/JasonMo1/ZealOS-Prebuild/releases/download/23-06-22/owr0.2.0_cft.img",
             "version": "zos-v0.2.0-19-g2eeeed1",
             "hash": "d39d52e0cd2f6e941cfca83cf0cf78e61ef3aa6eee17af80310e2a204fc4aac0"
@@ -39,13 +39,13 @@
             "hash": "1229403204cd2c2dd4010b3ba6fb2456a86c353bece87a78ba2bf16afd21184e"
         },
         {
-            "name": "zos-v0.2.0-17-g588f5ca\n+fetch6",
+            "name": "zos-v0.2.0-17-g588f5ca+fetch6",
             "urls": "https://github.com/JasonMo1/ZealOS-Prebuild/releases/download/23-06-22/owr0.2.0_fetch6.img",
             "version": "zos-v0.2.0-17-g588f5ca",
             "hash": "a5c004758801284befdbff5b772e9e24961a2acde058fd10518169d9b7fbfad1"
         },
         {
-            "name": "zos-v0.2.0-17-g588f5ca\n+rdfile",
+            "name": "zos-v0.2.0-17-g588f5ca+rdfile",
             "urls": "https://github.com/JasonMo1/ZealOS-Prebuild/releases/download/23-06-22/owr0.2.0_rdfile.img",
             "version": "zos-v0.2.0-17-g588f5ca",
             "hash": "efc862ae2518d041bb3b9ba5a9bc280a4b1a82e1b9aca0f809ddf71394c60100"
