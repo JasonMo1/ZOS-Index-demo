@@ -4,14 +4,14 @@
     [
         {
             "name": "zos-v0.3.0-stable",
-            "urls": "https://github.com/JasonMo1/ZealOS-Prebuild/releases/download/23-07-05/owr0.3.0_master.img",
+            "urls": "https://github.com/Zeal8bit/Zeal-8-bit-OS/releases/download/v0.3.0/os_with_romdisk.img",
             "version": "zos-v0.3.0-stable",
             "hash": "007ec3306c33b20bf304047ba63edf97ecf21cbfa83bb0313c96d34d363336e2"
         },
         {
             "name": "zos-v0.2.0-stable",
             "urls": "https://github.com/Zeal8bit/Zeal-8-bit-OS/releases/download/v0.2.0/os_with_romdisk.img",
-            "version": "zos-v0.2.0-main-stable",
+            "version": "zos-v0.2.0-stable",
             "hash": "34486dcf001013efdf4aa7251cc57aede3bf07b37bf79cf9c64cc830cf0789af"
         }
     ],
