@@ -22,36 +22,23 @@
     <link rel="icon" href="assets/img/logo1.png" sizes="16x16">
   </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="assets/js/libs/jquery.min.js"></script>
     <script src="assets/js/libs/marked.min.js"></script>
     <script src="assets/js/libs/anchor.min.js"></script>
+    <script src="assets/js/utils.js"></script>
     <script src="assets/js/readme.js"></script>
     <script src="assets/js/indexes.js"></script>
 
     <div id="content" class="container-lg px-3 my-5 markdown-body">
     </div>
-    <div class="container-lg px-3 my-5 markdown-body">
+    <div id="index-container" class="container-lg px-3 my-5 markdown-body">
+      <h2>Index Downloader</h2>
+      <select id="image_select">
+        <option value="">Choose an image...</option>
+      </select>
+      <button onclick="download_image();">Download</button>
+
       <h2>Index Viewer</h2>
-
-      <h3>Offical Index</h3>
-      <button onclick="download_index('offical');">Download this index</button>
-      <div class="language-plaintext highlighter-rouge">
-        <div class="highlight">
-          <pre class="highlight">
-            <code id="zos-index-offical"></code>
-          </pre>
-        </div>
-      </div>
-
-      <h3>Our Index</h3>
-      <button onclick="download_index('demo');">Download this index</button>
-      <div class="language-plaintext highlighter-rouge">
-        <div class="highlight">
-          <pre class="highlight">
-            <code id="zos-index-demo"></code>
-          </pre>
-        </div>
-      </div>
 
     </div>
     <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
