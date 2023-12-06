@@ -1,22 +1,12 @@
 {
     "indexversion": "0.0.1",
-    "Stable":
-    [
-        {
-            "name": "zos-v0.3.0-stable",
-            "urls": "https://github.com/Zeal8bit/Zeal-8-bit-OS/releases/download/v0.3.0/os_with_romdisk.img",
-            "version": "zos-v0.3.0-stable",
-            "hash": "007ec3306c33b20bf304047ba63edf97ecf21cbfa83bb0313c96d34d363336e2"
-        },
-        {
-            "name": "zos-v0.2.0-stable",
-            "urls": "https://github.com/Zeal8bit/Zeal-8-bit-OS/releases/download/v0.2.0/os_with_romdisk.img",
-            "version": "zos-v0.2.0-stable",
-            "hash": "34486dcf001013efdf4aa7251cc57aede3bf07b37bf79cf9c64cc830cf0789af"
-        }
-    ],
-    "Image with program":
-    [
+    "latest": {
+        "name": "v0.3.0-33-geea1592",
+        "urls": "https://zeal8bit.com/roms/v0.3.0-33-geea1592.img",
+        "version": "v0.3.0-33-geea1592/",
+        "hash": "85b6258a746e8ae7a958206b5b58cc2d62b2a678df8dfdd8778dde31955f9e10"
+    },
+    "nightly": [
         {
             "name": "zos-v0.3.0-21-g3f7188+zealasm+zepto+wozmon",
             "urls": "https://cdn.discordapp.com/attachments/1028694059461644429/1145983934677667930/g39f718_zealasm_zepto_wozmon.img",
@@ -46,15 +36,68 @@
             "urls": "https://github.com/JasonMo1/ZealOS-Prebuild/releases/download/23-06-22/owr0.2.0_rdfile.img",
             "version": "zos-v0.2.0-17-g588f5ca",
             "hash": "efc862ae2518d041bb3b9ba5a9bc280a4b1a82e1b9aca0f809ddf71394c60100"
-        }
-    ],
-    "Other":
-    [
+        },
+        {
+            "name": "v0.3.0-24-gb1609b1",
+            "urls": "https://zeal8bit.com/roms/v0.3.0-24-gb1609b1.img",
+            "version": "v0.3.0-24-gb1609b1/",
+            "hash": "777ff1552f320fbf0e40c6a45f3ab738918c9906695980448ce2b218a219223f"
+        },
+        {
+            "name": "v0.3.0-25-gb128e63",
+            "urls": "https://zeal8bit.com/roms/v0.3.0-25-gb128e63.img",
+            "version": "v0.3.0-25-gb128e63/",
+            "hash": "65d78e4eac8e8375d0249b7bbed226eaf36f63fa0b81705a7c412b103931e405"
+        },
+        {
+            "name": "v0.3.0-25-gd659bce",
+            "urls": "https://zeal8bit.com/roms/v0.3.0-25-gd659bce.img",
+            "version": "v0.3.0-25-gd659bce/",
+            "hash": "90fc10bb8f1b866d0bf0c613890d8d265456b285b8dafeffce8757b0a9a20594"
+        },
+        {
+            "name": "v0.3.0-28-g00e0571",
+            "urls": "https://zeal8bit.com/roms/v0.3.0-28-g00e0571.img",
+            "version": "v0.3.0-28-g00e0571/",
+            "hash": "b23da0f7d1325c3d08a36b8e2f935c8eef8a57a97068e838d95875f27c6bb394"
+        },
+        {
+            "name": "v0.3.0-29-g8860f1b",
+            "urls": "https://zeal8bit.com/roms/v0.3.0-29-g8860f1b.img",
+            "version": "v0.3.0-29-g8860f1b/",
+            "hash": "7c98f2dd4f8eb3490a8f86175c96280a5f8bf26da6c21b723c04e1109c31253a"
+        },
+        {
+            "name": "v0.3.0-30-g0898753",
+            "urls": "https://zeal8bit.com/roms/v0.3.0-30-g0898753.img",
+            "version": "v0.3.0-30-g0898753/",
+            "hash": "e0dfc909f984e9bc5cad7ceae0244e23a30d056d2f31dafa47af14574f2c64a9"
+        },
+        {
+            "name": "v0.3.0-31-g6503a4b",
+            "urls": "https://zeal8bit.com/roms/v0.3.0-31-g6503a4b.img",
+            "version": "v0.3.0-31-g6503a4b/",
+            "hash": "6d006f495c21e992c99bbb93f4e40d7041085e26d34637a711e89e6eb28f4705"
+        },
         {
             "name": "cpm-v2.2",
             "urls": "https://github.com/JasonMo1/ZealOS-Prebuild/releases/download/23-06-26/cpm-zealcom.img",
             "version":"cpm-v2.2",
             "hash":"3210481ff550a54637a4fa3c5018f124a42acf974d3c14c73b25046c3e5fba8c"
+        }
+    ],
+    "stable": [
+        {
+            "name": "v0.3.0",
+            "urls": "https://github.com/Zeal8bit/Zeal-8-bit-OS/releases/download/v0.3.0/os_with_romdisk.img",
+            "version": "zos-v0.3.0-stable",
+            "hash": "007ec3306c33b20bf304047ba63edf97ecf21cbfa83bb0313c96d34d363336e2"
+        },
+        {
+            "name": "v0.2.0",
+            "urls": "https://github.com/Zeal8bit/Zeal-8-bit-OS/releases/download/v0.2.0/os_with_romdisk.img",
+            "version": "zos-v0.2.0-stable",
+            "hash": "34486dcf001013efdf4aa7251cc57aede3bf07b37bf79cf9c64cc830cf0789af"
         }
     ]
 }

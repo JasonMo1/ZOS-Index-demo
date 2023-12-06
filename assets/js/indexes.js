@@ -1,7 +1,7 @@
 var urls = {
     "offical": "https://zeal8bit.com/roms/index.json",
     "demo": "https://jasonmo1.github.io/ZOS-Index-demo/index.json",
-    // "test": "https://github.com/JasonMo1/ZOS-Index-demo/releases/download/v0.1.0/index.json",
+    // "test": "https://github.com/JasonMo1/ZOS-Index-demo/releases/download/v0.0.1/index.json",
 };
 
 async function load_indexes() {
