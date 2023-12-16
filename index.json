@@ -1,12 +1,18 @@
 {
     "indexversion": "0.0.1",
     "latest": {
-        "name": "v0.3.0-33-geea1592",
-        "urls": "https://zeal8bit.com/roms/v0.3.0-33-geea1592.img",
-        "version": "v0.3.0-33-geea1592/",
-        "hash": "85b6258a746e8ae7a958206b5b58cc2d62b2a678df8dfdd8778dde31955f9e10"
+        "name": "wsl-imgdbg",
+        "urls": "http://localhost:8000/home/jasonmo/zeal/Zeal-8-bit/Zeal-8-bit-OS/build/os_with_romdisk.img",
+        "version": "zos-dbg",
+        "hash": "null"
     },
     "nightly": [
+        {
+            "name": "v0.3.0-33-geea1592",
+            "urls": "https://zeal8bit.com/roms/v0.3.0-33-geea1592.img",
+            "version": "v0.3.0-33-geea1592/",
+            "hash": "85b6258a746e8ae7a958206b5b58cc2d62b2a678df8dfdd8778dde31955f9e10"
+        },
         {
             "name": "zos-v0.3.0-21-g3f7188+zealasm+zepto+wozmon",
             "urls": "https://cdn.discordapp.com/attachments/1028694059461644429/1145983934677667930/g39f718_zealasm_zepto_wozmon.img",
