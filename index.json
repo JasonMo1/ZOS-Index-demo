@@ -1,12 +1,18 @@
 {
     "indexversion": "0.0.1",
     "latest": {
-        "name": "wsl-imgdbg",
+        "name": "zos-wslimgdbg",
         "urls": "http://localhost:8000/home/jasonmo/zeal/Zeal-8-bit/Zeal-8-bit-OS/build/os_with_romdisk.img",
         "version": "zos-dbg",
         "hash": "null"
     },
     "nightly": [
+	{
+            "name": "cpm-wslimgdbg",
+            "urls": "http://localhost:8000/home/jasonmo/zeal/Zeal-CPM/cpm.img",
+            "version": "cpm-dbg",
+            "hash": "null"
+        },      
         {
             "name": "v0.3.0-33-geea1592",
             "urls": "https://zeal8bit.com/roms/v0.3.0-33-geea1592.img",
